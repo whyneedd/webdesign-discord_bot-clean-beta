@@ -168,6 +168,21 @@ header {
 
 }
 
+.nav-bar .nav-list li a::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    margin: auto;
+    background-color: rgb(251, 251, 8);
+    transition: .8s;
+
+}
+
+.nav-bar .nav-list li a:hover::after {
+    width: 100%;
+}
+
 .nav-bar .nav-list li a.active::after {
     content: "";
     display: block;
@@ -303,7 +318,7 @@ header {
 }
 
 .card-ftr h4 {
-    font-size: 24px;
+    font-size: 22px;
     margin-bottom: 37px;
 
 }
@@ -332,8 +347,9 @@ header {
     height: 60px;
     display: flex;
     justify-content: center;
-    
+
 }
+
 .humbger {
     display: none;
 
@@ -349,7 +365,7 @@ header {
     }
 
     .features {
-        min-height: 200vh;
+        min-height: 180vh;
     }
 
     .humbger {
