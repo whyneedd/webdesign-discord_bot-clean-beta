@@ -1,1 +1,1 @@
-### Template discord
+### Template Discord
