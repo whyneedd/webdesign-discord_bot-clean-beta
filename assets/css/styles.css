@@ -361,6 +361,7 @@ header {
 .card-ftr ul li a {
     display: block;
     color: #fff;
+    margin-bottom: 17px;
 
 }
 
