@@ -12,7 +12,7 @@ window.addEventListener("load", ShowAff);
 var loadingAff;
 
 function ShowAff() {
-    loadingAff = setTimeout(ShowPages, 20);
+    loadingAff = setTimeout(ShowPages, 12000);
 
 }
 
