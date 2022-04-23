@@ -1,9 +1,9 @@
-    /* =========== GOOGLE FONT ========== */
+/* =========== GOOGLE FONT ========== */
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
-    /* =========== BASES CONFIG ========== */
+/* =========== BASES CONFIG ========== */
 
 * {
     margin: 0;
@@ -13,7 +13,7 @@
 
 }
 
-    /* =========== BASES ========== */
+/* =========== BASES ========== */
 
 
 body,
@@ -47,7 +47,7 @@ html {
 
 }
 
-    /* =========== PAGES LOADING ========== */
+/* =========== PAGES LOADING ========== */
 
 .loading1 {
     min-height: 100vh;
@@ -79,11 +79,12 @@ html {
 }
 
 .objt {
+    color: #202225;
     position: relative;
     display: flex;
     width: 12px;
     height: 12px;
-    margin: 14px;
+    margin: 8px;
     border-radius: 50px;
     background-color: rgb(251, 251, 8);
     animation: Loading1 0.8s infinite;
@@ -102,9 +103,17 @@ html {
     animation-delay: .3s;
 }
 
+.objt:nth-child(4) {
+    animation-delay: .4s;
+}
+
+.objt:nth-child(5) {
+    animation-delay: .5s;
+}
+
 @keyframes Loading1 {
     0% {
-        height: 8px;
+        height: 3px;
     }
 
     50% {
@@ -112,7 +121,7 @@ html {
     }
 
     100% {
-        height: 8px;
+        height: 3px;
     }
 }
 
@@ -120,7 +129,7 @@ html {
     display: none;
 }
 
-    /* =========== PAGES ========== */
+/* =========== PAGES ========== */
 
 header {
     min-height: 100vh;
@@ -129,7 +138,7 @@ header {
 
 }
 
-    /* =========== MENU NAVIGATION ========== */
+/* =========== MENU NAVIGATION ========== */
 
 
 .nav-bar {
@@ -212,7 +221,7 @@ header {
 }
 
 
-    /* =========== CONTENT ========== */
+/* =========== CONTENT ========== */
 
 .content {
     position: absolute;
@@ -228,7 +237,9 @@ header {
 
 .row-btn {
     display: flex;
-
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .btn-content {
@@ -244,14 +255,13 @@ header {
 }
 
 .btn-content:hover {
-    transform: scale(1.1);
     padding: 8px 22px;
     background: transparent;
     color: #fff;
-    border: 2px solid #fff;
+    border: 1px solid #fff;
 }
 
-    /* =========== CARACTERISTIQUES ========== */
+/* =========== CARACTERISTIQUES ========== */
 
 
 .features {
@@ -277,7 +287,7 @@ header {
     position: absolute;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-flow: wrap row;
     padding-top: 100px;
     padding: 50px;
     width: 100%;
@@ -291,17 +301,32 @@ header {
     justify-content: center;
     top: 30%;
     width: 230px;
-    height: 200px;
+    height: 280px;
     border-radius: 20px;
     margin: 8px;
+    overflow: hidden;
     box-shadow: 0 15px 8px #000;
     background-color: #fff;
+
+}
+
+.card .banner {
+    width: 100%;
+    height: 0%;
+    transition: .8s;
+
+}
+
+.card:hover .banner {
+    background-color: rgb(251, 251, 8);
+    height: 100%;
 
 }
 
 .card h4 {
     position: absolute;
     display: flex;
+    text-transform: uppercase;
     justify-content: center;
     top: 50px;
 }
@@ -314,7 +339,7 @@ header {
     justify-content: center;
 }
 
-    /* =========== FOOTER ========== */
+/* =========== FOOTER ========== */
 
 .footer {
     min-height: 34vh;
@@ -382,7 +407,7 @@ header {
 .team__staff {
     min-height: 100vh;
     min-width: 100%;
-    background-color: rgb(0,0,0);
+    background-color: rgb(0, 0, 0);
 
     position: relative;
 }
