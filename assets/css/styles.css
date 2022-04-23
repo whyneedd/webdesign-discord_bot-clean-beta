@@ -310,6 +310,14 @@ header {
 
 }
 
+.card .fa-solid {
+    position: absolute;
+    display: flex;
+    top: 8%;
+    color: rgb(251, 251, 8);
+    font-size: 50px;
+    justify-content: center;
+}
 .card .banner {
     width: 100%;
     height: 0%;
@@ -328,13 +336,13 @@ header {
     display: flex;
     text-transform: uppercase;
     justify-content: center;
-    top: 50px;
+    top: 100px;
 }
 
 .card p {
     position: absolute;
     display: flex;
-    top: 40%;
+    top: 50%;
     padding: 20px;
     justify-content: center;
 }
